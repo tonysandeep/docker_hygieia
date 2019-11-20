@@ -35,7 +35,7 @@ services:
       SPRING_DATA_MONGODB_USERNAME: dashboarduser
       SPRING_DATA_MONGODB_PASSWORD: password
     volumes:
-      - C:\Users\sguclu\Desktop\Hygieia\volumes\api\logs:/hygieia/logs
+      - /app/api/logs:/hygieia/logs
     depends_on: 
       - hygieia-mongodb      
  
@@ -48,6 +48,6 @@ services:
     container_name: mongodb
     command: --smallfiles
     #NOT WORKING ON WINDOWS/MAC WTF???
-    #volumes:
-    #  - C:\Users\sguclu\Desktop\Hygieia\volumes\mongodb\:/data/db
+    volumes:
+      - /data/db:/data/db
  
