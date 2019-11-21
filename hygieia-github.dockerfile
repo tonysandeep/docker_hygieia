@@ -5,7 +5,7 @@ CMD chmod +x /hygieia/properties-builder.sh
 
 
 WORKDIR /hygieia
-
+#env properties 
 ENV PROP_FILE /hygieia/config/application.properties
 
 CMD /hygieia/properties-builder.sh && \
