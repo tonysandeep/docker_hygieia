@@ -16,3 +16,5 @@ CMD ./versionone-properties-builder.sh && \
   java -jar versionone-feature-collector*.jar --spring.config.location=/hygieia/hygieia-versionone-feature-collector.properties
   
   #jar files has to be build from hygieia repo
+RUN
+  whoami
